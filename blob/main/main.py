@@ -17,8 +17,8 @@ async def get_info(slack_name: str = Query(..., description="Your Slack name"), 
     utc_time = datetime.utcnow().isoformat() + "Z"
 
     # Assuming these URLs need to be dynamic based on the input
-    github_file_url = f"https://github.com/reganmatics/HNG/blob/main/main.py"
-    github_repo_url = f"https://github.com/reganmatics/HNG"
+    github_file_url = f"https://github.com/Reganmatics/HNG/blob/main/main.py"
+    github_repo_url = f"https://github.com/Reganmatics/HNG"
 
     response_data = {
         "slack_name": slack_name,
