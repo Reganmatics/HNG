@@ -14,7 +14,7 @@ async def get_info(slack_name: str = Query(..., description="Your Slack name"), 
     current_day = datetime.now().strftime('%A')
 
     # Get the current UTC time in ISO 8601 format
-    utc_time = datetime.utcnow().isoformat() + "Z"
+    utc_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
     # Assuming these URLs need to be dynamic based on the input
     github_file_url = f"https://github.com/Reganmatics/HNG/main.py"
